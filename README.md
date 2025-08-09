@@ -83,6 +83,13 @@ Agora, vamos empacotar nossa aplicação em um "Fat JAR" autônomo.
     ```bash
     ./mvnw clean package
     ```
+Obs. Caso tenha uma falha no comando "./mvnw clean package", execute com o parametro (./mvnw clean package -DskipTests).
+<img width="1103" height="586" alt="image" src="https://github.com/user-attachments/assets/14bb14fd-b46e-42eb-9a98-06f289a6880a" />
+    ``` 
+    ./mvnw clean package -DskipTests
+    ```
+-Vai funcionar com build success.
+
 2.  Após o sucesso, você encontrará o arquivo `meu-app-devops-0.0.1-SNAPSHOT.jar` dentro da pasta `target/`. Este é o nosso artefato!
 
 ### Passo 3: Execute o JAR Diretamente
